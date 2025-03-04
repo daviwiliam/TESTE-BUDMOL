@@ -1,0 +1,468 @@
+/* ------------------------------------------------------------ */
+/* FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ------------------------------------------------------------ */
+/* RESET DE ESTILOS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------ */
+/* ESTILOS GERAIS */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #3e3d3d;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ------------------------------------------------------------ */
+/* CONTAINER CENTRALIZADO */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ------------------------------------------------------------ */
+/* HEADER E NAVEGAÇÃO */
+header {
+    background-color: #333;
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #00bcd4;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links .logout {
+    font-size: 20px;
+    margin-left: auto;
+}
+
+/* ------------------------------------------------------------ */
+/* RODAPÉ */
+footer {
+    margin-top: 20px;
+    background-color: #333;
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* ------------------------------------------------------------ */
+/* SEÇÃO DE EVENTOS */
+.event-section {
+    min-height: 480px;
+    margin-top: 30px;
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* ------------------------------------------------------------ */
+/* GRID DE EVENTOS */
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.event-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+}
+
+.event-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.event-card p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.event-card .event-date {
+    font-weight: bold;
+    color: #333;
+}
+
+.event-card .info-btn,
+.event-card .edit-btn {
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.event-card .info-btn {
+    background-color: #00bcd4;
+}
+
+.event-card .info-btn:hover {
+    background-color: #0097a7;
+}
+
+.event-card .edit-btn {
+    background-color: #f0ad4e;
+}
+
+.event-card .edit-btn:hover {
+    background-color: #ec971f;
+}
+
+/* ------------------------------------------------------------ */
+/* FORMULÁRIOS E AUTENTICAÇÃO */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+}
+
+.auth-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.auth-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* ------------------------------------------------------------ */
+/* ESTILOS DOS CAMPOS DE FORMULÁRIO */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label,
+.admin label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.admin {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.admin input {
+    max-width: 20px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.form-input:focus {
+    border-color: #00bcd4;
+    outline: none;
+}
+
+/* ------------------------------------------------------------ */
+/* BOTÕES DE AUTENTICAÇÃO */
+.auth-btn {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.auth-btn:hover {
+    background-color: #0097a7;
+}
+
+/* ------------------------------------------------------------ */
+/* LINKS DE NAVEGAÇÃO */
+.register-link, .login-link {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.register-link a, .login-link a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.register-link a:hover, .login-link a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------------ */
+/* MENSAGENS DE ERRO E SUCESSO */
+.msg-erro {
+    color: #fff;
+    background-color:crimson;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+}
+
+.msg-info {
+    color: #fff;
+    background-color: #0097a7;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+}
+
+/* ------------------------------------------------------------ */
+/* CONTAINER DE EVENTO */
+.event-container {
+    width: 90%;
+    max-width: 800px;
+    min-height: 450px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.event-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.event-details p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* ------------------------------------------------------------ */
+/* BOTÕES DE AÇÃO PARA EVENTOS */
+.action-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.create-btn{
+    margin-bottom: 15px;    
+}
+
+.event-action-btn,
+.cancel-btn,
+.delete-btn,
+.register-btn {
+    border: none;
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.event-action-btn {
+    background-color: #00bcd4;
+    color: white;
+}
+
+.event-action-btn:hover {
+    background-color: #0097a7;
+}
+
+.create-btn {
+    background-color: #00bcd4;
+}
+
+.cancel-btn {
+    background-color: #c91e1e;
+}
+
+.cancel-btn:hover {
+    background-color: #960f0f;
+}
+
+.delete-btn {
+    color: #fff;
+    background-color: #3a3a3a;
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+
+.delete-btn:hover {
+    background-color: #252525;
+}
+
+.register-btn {
+    background-color: #5bc0de;
+}
+
+.register-btn:hover {
+    background-color: #31b0d5;
+}
+
+/* ------------------------------------------------------------ */
+/* LINK PARA VOLTAR */
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #00bcd4;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------------ */
+/* LISTA DE PARTICIPANTES */
+.participante-container {
+    width: 90%;
+    max-width: 1200px;
+    min-height: 480px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.participante-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.participante-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.participante-table th,
+.participante-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.participante-table th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+    color: #333;
+}
+
+.participante-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.participante-table td {
+    color: #666;
+}
+
+/* Títulos das colunas */
+.participante-table .column-id {
+    width: 10%;
+}
+
+.participante-table .column-name {
+    width: 40%;
+}
+
+.participante-table .column-email {
+    width: 40%;
+}
+
+/* ------------------------------------------------------------ */
+/* ESTILOS GERAIS */
+.msg-null {
+    text-align: center;
+    color: #979797;
+    height: 470px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
