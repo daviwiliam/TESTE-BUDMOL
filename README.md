@@ -24,7 +24,7 @@ Event Manager é um sistema web desenvolvido em Laravel para gerenciamento de ev
 ### 1️⃣ Clonar o Repositório  
 ```bash
 git clone https://github.com/daviwliam/TESTE-BUDMOL.git
-cd event-manager
+cd TESTE-BUDMOL
 ```
 
 ### 2️⃣ Instalar Dependências  
